@@ -1,6 +1,6 @@
 namespace SharpCord.Core;
 
-// "DcBotRuntimeOptions:BotToken"
+// "BotOptions:Token"
 public class BotOptions
 {
     public required string Token { get; set; }

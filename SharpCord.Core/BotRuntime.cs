@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
+using SharpCord.Core.Internal;
 
 public sealed class BotRuntime<TBot> : IHostedService
     where TBot : IBot

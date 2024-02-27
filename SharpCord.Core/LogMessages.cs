@@ -29,6 +29,6 @@ internal class LogMessages
     public static readonly Action<ILogger, Exception?> ClientStopped
         = LoggerMessage.Define(LogLevel.Information, 18004, "Discord Client Stopped");
 
-    public static readonly Action<ILogger, Exception?> NonAwaitedTaskError
+    public static readonly Action<ILogger, Exception?> UnawaitedTaskError
         = LoggerMessage.Define(LogLevel.Error, 19001, "Error in non-awaited Task");
 }

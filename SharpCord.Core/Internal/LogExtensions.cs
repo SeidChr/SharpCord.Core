@@ -1,7 +1,8 @@
-﻿namespace SharpCord.Core;
+namespace SharpCord.Core.Internal;
+
 using Microsoft.Extensions.Logging;
 
-public static class LogExtensions
+internal static class LogExtensions
 {
     public static void Log(this ILogger logger, Action<ILogger, Exception?> action)
         => action(logger, null);

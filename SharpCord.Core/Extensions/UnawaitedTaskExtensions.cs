@@ -1,8 +1,10 @@
-namespace SharpCord.Core;
+namespace SharpCord.Core.Extensions;
 
 using Microsoft.Extensions.Logging;
 
-public static class ThreadingExtensions
+using SharpCord.Core.Internal;
+
+public static class UnawaitedTaskExtensions
 {
     private static void HandleUnawaitedTaskCompletion(Task task, ILogger logger)
     {
@@ -11,7 +13,7 @@ public static class ThreadingExtensions
             {
                 if (task.Exception != null)
                 {
-                    logger.Log(LogMessages.NonAwaitedTaskError, task.Exception);
+                    logger.Log(LogMessages.UnawaitedTaskError, task.Exception);
                 }
             });
     }
