@@ -2,6 +2,7 @@ namespace SharpCord.Core;
 
 using Discord;
 using Discord.WebSocket;
+
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
