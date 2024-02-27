@@ -6,7 +6,7 @@ using Discord;
 
 using Microsoft.Extensions.Logging;
 
-internal class LogMessages
+internal sealed class LogMessages
 {
     public static readonly Action<ILogger, string, Exception?> Connecting
         = LoggerMessage.Define<string>(LogLevel.Information, 16001, "Trying to connect using token '{Token}'");
