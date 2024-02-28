@@ -2,7 +2,7 @@ namespace SharpCord.Core.Extensions;
 
 using Discord.WebSocket;
 
-internal static class DiscordExtensions
+public static class DiscordExtensions
 {
     public static SocketGuild? GetGuild(this ISocketMessageChannel channel)
         => channel is SocketGuildChannel guildChannel
